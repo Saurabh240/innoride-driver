@@ -1,0 +1,20 @@
+{
+  "buildFiles": [
+    "C:\\src\\flutter\\packages\\flutter_tools\\gradle\\src\\main\\groovy\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "C:\\Android\\cmake\\3.22.1\\bin\\ninja.exe",
+      "-C",
+      "C:\\Users\\saura\\Downloads\\codecanyon-Zo4TN191-ovoride-complete-cross-platform-ride-sharing-solution\\Flutter\\Driver\\Files\\innoride-driver\\android\\app\\.cxx\\Debug\\254b272f\\x86_64",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "C:\\Android\\cmake\\3.22.1\\bin\\ninja.exe",
+    "-C",
+    "C:\\Users\\saura\\Downloads\\codecanyon-Zo4TN191-ovoride-complete-cross-platform-ride-sharing-solution\\Flutter\\Driver\\Files\\innoride-driver\\android\\app\\.cxx\\Debug\\254b272f\\x86_64",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {}
+}
