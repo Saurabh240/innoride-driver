@@ -93,10 +93,10 @@ class _LoginScreenState extends State<LoginScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     spaceDown(Dimensions.space15),
-                    Image.asset(
+                   /* Image.asset(
                       MyImages.appLogoWhite,
                       width: MediaQuery.of(context).size.width / 3,
-                    ),
+                    ),*/
                     SvgPicture.asset(MyIcons.bg),
                     Container(
                       padding: const EdgeInsetsDirectional.symmetric(

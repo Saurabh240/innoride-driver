@@ -2,13 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:ovoride_driver/core/utils/my_color.dart';
-import 'package:ovoride_driver/core/utils/my_images.dart';
 import 'package:ovoride_driver/core/utils/util.dart';
 import 'package:ovoride_driver/data/controller/localization/localization_controller.dart';
 import 'package:ovoride_driver/data/controller/splash/splash_controller.dart';
 import 'package:ovoride_driver/data/repo/auth/general_setting_repo.dart';
 import 'package:ovoride_driver/data/services/api_service.dart';
 import 'package:ovoride_driver/presentation/components/custom_no_data_found_class.dart';
+
+import '../../../generated/assets.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -24,9 +25,7 @@ class _SplashScreenState extends State<SplashScreen> {
     Get.put(ApiClient(sharedPreferences: Get.find()));
     Get.put(GeneralSettingRepo(apiClient: Get.find()));
     Get.put(LocalizationController(sharedPreferences: Get.find()));
-    final controller = Get.put(
-        SplashController(repo: Get.find(), localizationController: Get.find()));
-
+    final controller = Get.put(SplashController(repo: Get.find(), localizationController: Get.find()));
     super.initState();
 
     WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
@@ -49,7 +48,7 @@ class _SplashScreenState extends State<SplashScreen> {
     return SafeArea(
       child: GetBuilder<SplashController>(
         builder: (controller) => AnnotatedRegion<SystemUiOverlayStyle>(
-          value: const SystemUiOverlayStyle(
+          value:  SystemUiOverlayStyle(
               statusBarColor: MyColor.primaryColor,
               statusBarBrightness: Brightness.dark,
               statusBarIconBrightness: Brightness.light),
@@ -68,8 +67,8 @@ class _SplashScreenState extends State<SplashScreen> {
                     children: [
                       Align(
                           alignment: Alignment.center,
-                          child: Image.asset(MyImages.appLogoIcon,
-                              height: 100, width: 100)),
+                          child: Image.asset(Assets.logoSplashIcon,
+                              height: 180, width: 180)),
                     ],
                   ),
           ),

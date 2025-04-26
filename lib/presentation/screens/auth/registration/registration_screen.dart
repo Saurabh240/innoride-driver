@@ -74,11 +74,11 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   spaceDown(Dimensions.space15),
-                                  Image.asset(
+                                 /* Image.asset(
                                     MyImages.appLogoWhite,
                                     width:
                                         MediaQuery.of(context).size.width / 3,
-                                  ),
+                                  ),*/
                                   SvgPicture.asset(MyIcons.bg),
                                 ],
                               ),
