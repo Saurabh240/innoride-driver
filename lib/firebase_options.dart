@@ -40,6 +40,6 @@ class DefaultFirebaseOptions {
     messagingSenderId: '1037368853288',
     projectId: 'ovo-ride',
     storageBucket: 'ovo-ride.firebasestorage.app',
-    iosBundleId: 'com.innoride.innoridedriver',
+    iosBundleId: 'com.innodrivers',
   );
 }
