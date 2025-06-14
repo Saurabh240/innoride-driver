@@ -105,6 +105,7 @@ class _SocialAuthSectionState extends State<SocialAuthSection> {
                       width: double.infinity,
                       margin: EdgeInsets.only(left: Dimensions.space10),
                       decoration: BoxDecoration(
+                        color: Colors.black,
                         borderRadius:
                             BorderRadius.circular(Dimensions.mediumRadius),
                         border:
@@ -125,12 +126,13 @@ class _SocialAuthSectionState extends State<SocialAuthSection> {
                                       color: MyColor.primaryColor))
                               : MyLocalImageWidget(
                                   imagePath: MyImages.apple,
-                                  height: 25,
-                                  width: 25,
+                                  height: 27,
+                                  width: 27,
                                   boxFit: BoxFit.contain),
                           SizedBox(width: Dimensions.space10),
                           Text(MyStrings.apple.tr,
                               style: regularDefault.copyWith(
+                                color: Colors.white,
                                   fontWeight: FontWeight.w500, fontSize: 16)),
                         ],
                       ),

@@ -62,9 +62,9 @@ class _VerifyForgetPassScreenState extends State<VerifyForgetPassScreen> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Image.asset(MyImages.appLogoWhite,
+                                /*Image.asset(MyImages.appLogoWhite,
                                     width:
-                                        MediaQuery.of(context).size.width / 3),
+                                        MediaQuery.of(context).size.width / 3),*/
                                 SvgPicture.asset(MyIcons.bg, height: 200),
                                 spaceDown(Dimensions.space20),
                                 Align(

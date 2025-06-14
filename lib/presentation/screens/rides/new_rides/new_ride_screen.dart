@@ -19,6 +19,7 @@ import 'package:ovoride_driver/presentation/screens/dashboard/widgets/vahicle_ky
 import 'package:ovoride_driver/presentation/screens/rides/new_rides/widget/offer_bid_bottom_sheet.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import '../../../../core/helper/string_format_helper.dart';
+import '../../../components/buttons/rounded_button.dart';
 import '../../../components/switch/lite_rolling_switch.dart';
 import 'widget/new_ride_card.dart';
 
@@ -72,7 +73,7 @@ class _NewRidesScreenState extends State<NewRidesScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return GetBuilder<DashBoardController>(builder: (controller) {
+    return  GetBuilder<DashBoardController>(builder: (controller) {
       return AnnotatedRegion<SystemUiOverlayStyle>(
         value: const SystemUiOverlayStyle(
             statusBarColor: MyColor.primaryColor,

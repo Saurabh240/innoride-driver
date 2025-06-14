@@ -7,7 +7,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Inno Driver</string>
+	<string>Inno Drivers</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -15,13 +15,28 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>Inno Driver</string>
+	<string>Inno Drivers</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>$(FLUTTER_BUILD_NAME)</string>
+	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.159266541498-krisjt5cmtglcll0m42987qveoinklgl</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.innodriver</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>$(FLUTTER_BUILD_NUMBER)</string>
 	<key>LSRequiresIPhoneOS</key>
@@ -31,35 +46,46 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
-	<key>CFBundleURLTypes</key>
-    	<array>
-    		<dict>
-    			<key>CFBundleURLSchemes</key>
-    			<array>
-    				<string>com.googleusercontent.apps.159266541498-krisjt5cmtglcll0m42987qveoinklgl</string>
-    			</array>
-    		</dict>
-    		<dict>
-    			<key>CFBundleURLSchemes</key>
-    			<array>
-    				<string>com.innodriver</string>
-    			</array>
-    		</dict>
-    	</array>
+
 	<key>NSCameraUsageDescription</key>
-	<string>This app requires access to the camera.</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>This app needs access to location when open.</string>
+    <string>Inno Driver requires access to your camera to capture photos or videos for profile setup, identity verification, and ride documentation.</string>
+
+
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>This app requires permission to save media to the photo library.</string>
+	<string>Inno Drivers requires permission to save media to the photo library.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>This app requires access to the photo library.</string>
+	<string>Inno Drivers requires access to the photo library.</string>
+
+	<key>NSLocationWhenInUseUsageDescription</key>
+    <string>Inno Driver needs access to your location while the app is in use to provide features like live ride tracking and nearby driver discovery.</string>
+
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>Inno Driver needs access to your location at all times to provide continuous ride tracking and background updates.</string>
+
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>Inno Driver needs access to your location even when the app is in the background to ensure seamless ride tracking and accurate pickups.</string>
+
+    <key>NSLocationUsageDescription</key>
+    <string>Inno Driver requires your location to offer key services like finding nearby drivers and ensuring accurate drop-off points.</string>
+
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>Inno Driver requires permission to save photos and videos to your photo library, such as ride receipts or media from within the app.</string>
+
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>Inno Driver requires access to your photo library to let you upload profile pictures and view saved ride-related media.</string>
+
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Inno Driver requires microphone access for audio recording during in-app video capture or support communication.</string>
+    
+    <key>NSContactsUsageDescription</key>
+    <string>Inno Driver requires access to your contacts to help you easily invite friends, share ride details, or connect with emergency contacts.</string>
+
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>remote-notification</string>
-		<string>processing</string>
+		<string>fetch</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>

@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "159266541498",
+    "project_id": "innoride-85b4b",
+    "storage_bucket": "innoride-85b4b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159266541498:android:582d81b2aef27d20eed783",
+        "android_client_info": {
+          "package_name": "com.innodrivers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159266541498-qkre00ukmpd8k3njhjpmfdj61aj3r8di.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.innodrivers",
+            "certificate_hash": "f6cb2b68cc9c114ac4570de7ca7fba0fc553d96c"
+          }
+        },
+        {
+          "client_id": "159266541498-pib16gn5uklfcofadt0u0n65e524a5t9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDt62Vs_okejzISqJC3jwtm7jN9gdpTir8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "159266541498-pib16gn5uklfcofadt0u0n65e524a5t9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "159266541498-8u0dktn0hia163arigcdq9lhqvheqgsv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.innorider"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159266541498:android:b939f7de767724f2eed783",
+        "android_client_info": {
+          "package_name": "com.innorider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159266541498-fva4f2vfjdsss9u182ll0jcjqg1v9cvq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.innorider",
+            "certificate_hash": "f6cb2b68cc9c114ac4570de7ca7fba0fc553d96c"
+          }
+        },
+        {
+          "client_id": "159266541498-pib16gn5uklfcofadt0u0n65e524a5t9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDt62Vs_okejzISqJC3jwtm7jN9gdpTir8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "159266541498-pib16gn5uklfcofadt0u0n65e524a5t9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "159266541498-8u0dktn0hia163arigcdq9lhqvheqgsv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.innorider"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

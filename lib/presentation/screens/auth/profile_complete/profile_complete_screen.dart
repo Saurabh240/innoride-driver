@@ -76,8 +76,8 @@ class _ProfileCompleteScreenState extends State<ProfileCompleteScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     spaceDown(Dimensions.space15),
-                    Image.asset(MyImages.appLogoWhite,
-                        width: MediaQuery.of(context).size.width / 3),
+               /*     Image.asset(MyImages.appLogoWhite,
+                        width: MediaQuery.of(context).size.width / 3),*/
                     SvgPicture.asset(MyIcons.bg),
                     Container(
                       margin: const EdgeInsetsDirectional.only(

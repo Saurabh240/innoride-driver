@@ -173,14 +173,15 @@ class CustomNewRideDialog {
                       Get.back();
                     }
                   },
-                  color: MyColor.colorGrey,
+                  color: MyColor.colorRed,
                   isColorChange: true,
                 )),
                 const SizedBox(width: Dimensions.space10),
                 Expanded(
                   child: GetBuilder<DashBoardController>(
                     builder: (controller) => RoundedButton(
-                      text: MyStrings.bidNOW.tr,
+                     // text: MyStrings.bidNOW.tr,
+                      text: MyStrings.accept.tr,
                       isLoading: dashboardController.isSendLoading,
                       press: () {
                         double enterValue = StringConverter.formatDouble(
@@ -201,7 +202,7 @@ class CustomNewRideDialog {
                           );
                         }
                       },
-                      color: MyColor.primaryColor,
+                      color: MyColor.greenSuccessColor,
                       isColorChange: true,
                     ),
                   ),
@@ -371,14 +372,15 @@ class CustomNewRideDialog {
                       Get.back();
                     }
                   },
-                  color: MyColor.colorGrey,
+                  color: MyColor.colorRed,
                   isColorChange: true,
                 )),
                 const SizedBox(width: Dimensions.space10),
                 Expanded(
                     child: GetBuilder<DashBoardController>(
                   builder: (controller) => RoundedButton(
-                    text: MyStrings.bidNOW.tr,
+                    //text: MyStrings.bidNOW.tr,
+                    text: MyStrings.accept.tr,
                     isLoading: dashboardController.isSendLoading,
                     press: () {
                       double enterValue = StringConverter.formatDouble(
@@ -399,7 +401,7 @@ class CustomNewRideDialog {
                         );
                       }
                     },
-                    color: MyColor.primaryColor,
+                    color: MyColor.greenSuccessColor,
                     isColorChange: true,
                   ),
                 )),

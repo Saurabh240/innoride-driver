@@ -51,15 +51,15 @@ class SocialLoginController extends GetxController {
         AppleIDAuthorizationScopes.email,
         AppleIDAuthorizationScopes.fullName,
       ]);
-      printX(credential.email);
+  /*    printX(credential.email);
       printX(credential.givenName);
       printX(credential.familyName);
       printX(credential.authorizationCode);
       printX(credential.identityToken);
-      printX(credential.authorizationCode);
-      printX(credential.identityToken);
+      printX(credential.authorizationCode);*/
+      printX("credential.userIdentifier===> ${credential.userIdentifier}");
       socialLoginUser(
-          accessToken: credential.identityToken ?? '', provider: 'apple');
+          accessToken: credential.userIdentifier ?? '', provider: 'apple');
     } catch (e) {
       printX(e.toString());
       CustomSnackBar.error(errorList: [MyStrings.somethingWentWrong]);

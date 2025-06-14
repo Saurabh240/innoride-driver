@@ -48,7 +48,7 @@ class ProfileCompleteController extends GetxController {
     countryList = profileRepo.apiClient.getOperatingCountry();
     update();
     if (countryList.isNotEmpty) {
-      selectCountryData(countryList.first);
+      selectCountryData(countryList.last);
     }
     isLoading = false;
     update();

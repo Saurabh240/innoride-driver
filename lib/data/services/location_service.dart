@@ -40,7 +40,7 @@ class LocationService {
     _currentPosition = position;
   }
 
-  Future<void> init() async {
+ /* Future<void> init() async {
     printX('status>>init');
     _status = await Permission.location.status;
     if (!status.isGranted) {
@@ -55,6 +55,37 @@ class LocationService {
       await getCurrentLocation();
     }
     printX('status>>$status');
+  }
+*/
+  Future<void> init() async {
+    printX('status>>init');
+
+    _status = await Permission.location.status;
+
+    if (_status.isGranted) {
+      await getCurrentLocation();
+    } else if (_status.isDenied) {
+      // Request permission
+      final result = await Permission.location.request();
+      _status = result;
+
+      if (_status.isGranted) {
+        await getCurrentLocation();
+      } else if (_status.isPermanentlyDenied) {
+        CustomSnackBar.error(
+            errorList: ["Location permission is permanently denied. Please enable it in settings."]);
+        await openAppSettings();
+      } else {
+        CustomSnackBar.error(
+            errorList: ["Location permission was denied. Please enable it."]);
+      }
+    } else if (_status.isPermanentlyDenied) {
+      CustomSnackBar.error(
+          errorList: ["Location permission is permanently denied. Please enable it in settings."]);
+      await openAppSettings();
+    }
+
+    printX('status>>$_status');
   }
 
   Future<void> getCurrentLocation() async {
@@ -73,7 +104,6 @@ class LocationService {
       CustomSnackBar.error(
           errorList: ["Something went wrong while Taking Location"]);
     }
-
     printX('status>>$currentAddress');
     printX('status>>${currentPosition.latitude} ${currentPosition.latitude}');
   }

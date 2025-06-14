@@ -57,10 +57,10 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Image.asset(
+                   /* Image.asset(
                       MyImages.appLogoWhite,
                       width: MediaQuery.of(context).size.width / 3,
-                    ),
+                    ),*/
                     SvgPicture.asset(MyIcons.bg, height: 200),
                     Container(
                       margin: EdgeInsetsDirectional.only(

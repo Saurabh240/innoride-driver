@@ -45,33 +45,31 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: GetBuilder<SplashController>(
-        builder: (controller) => AnnotatedRegion<SystemUiOverlayStyle>(
-          value:  SystemUiOverlayStyle(
-              statusBarColor: MyColor.primaryColor,
-              statusBarBrightness: Brightness.dark,
-              statusBarIconBrightness: Brightness.light),
-          child: Scaffold(
-            backgroundColor: controller.noInternet
-                ? MyColor.colorWhite
-                : MyColor.primaryColor,
-            body: controller.noInternet
-                ? NoDataOrInternetScreen(
-                    isNoInternet: true,
-                    onChanged: () {
-                      controller.gotoNextPage();
-                    },
-                  )
-                : Stack(
-                    children: [
-                      Align(
-                          alignment: Alignment.center,
-                          child: Image.asset(Assets.logoSplashIcon,
-                              height: 180, width: 180)),
-                    ],
-                  ),
-          ),
+    return GetBuilder<SplashController>(
+      builder: (controller) => AnnotatedRegion<SystemUiOverlayStyle>(
+        value:  SystemUiOverlayStyle(
+            statusBarColor: MyColor.primaryColor,
+            statusBarBrightness: Brightness.dark,
+            statusBarIconBrightness: Brightness.light),
+        child: Scaffold(
+          backgroundColor: controller.noInternet
+              ? MyColor.colorWhite
+              : MyColor.primaryColor,
+          body: controller.noInternet
+              ? NoDataOrInternetScreen(
+                  isNoInternet: true,
+                  onChanged: () {
+                    controller.gotoNextPage();
+                  },
+                )
+              : Stack(
+                  children: [
+                    Align(
+                        alignment: Alignment.center,
+                        child: Image.asset(Assets.logoSplashIcon,
+                            height: 180, width: 180)),
+                  ],
+                ),
         ),
       ),
     );

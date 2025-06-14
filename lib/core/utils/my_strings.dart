@@ -837,7 +837,8 @@ class MyStrings {
   static const String pleaseEnableLocationPermission =
       "Please enable your location permission";
 
-  static const String bidNOW = "BID NOW";
+  //static const String bidNOW = "BID NOW";
+  static const String accept = "Accept";
 
   static const String vehicleVerificationSubTitle =
       "Kindly provide the following information to complete your vehicle verification process. Your cooperation ensures a safe and reliable ride-sharing experience for both you and your passengers. Thank you!";

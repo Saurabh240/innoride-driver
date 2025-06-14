@@ -239,7 +239,8 @@ class NewRideCard extends StatelessWidget {
                 ),
                 const SizedBox(height: Dimensions.space20),
                 RoundedButton(
-                  text: MyStrings.bidNOW,
+                 // text: MyStrings.bidNOW,
+                  text: MyStrings.accept,
                   press: () {
                     controller.updateMainAmount(
                         double.tryParse(ride.amount.toString()) ?? 0);
@@ -258,6 +259,7 @@ class NewRideCard extends StatelessWidget {
                   verticalPadding: 15,
                   borderColor: MyColor.rideTitle,
                   textColor: MyColor.getRideTitleColor(),
+                  color: MyColor.greenSuccessColor,
                   isOutlined: true,
                   textStyle: regularDefault.copyWith(
                       color: MyColor.getRideTitleColor(),

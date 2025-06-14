@@ -20,7 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="LaunchImage" translatesAutoresizingMaskIntoConstraints="NO" id="YRO-k0-Ey4">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="LaunchImage" translatesAutoresizingMaskIntoConstraints="NO" id="YRO-k0-Ey4">
                                 <rect key="frame" x="106.66666666666669" y="336" width="180" height="180"/>
                                 <color key="backgroundColor" systemColor="labelColor"/>
                                 <color key="tintColor" systemColor="labelColor"/>
@@ -44,7 +44,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LaunchImage" width="320" height="418"/>
+        <image name="LaunchImage" width="106.66666412353516" height="139.33332824707031"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

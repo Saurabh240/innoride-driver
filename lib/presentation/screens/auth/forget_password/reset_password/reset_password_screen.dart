@@ -66,10 +66,10 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
               child: Column(
                 children: [
                   spaceDown(Dimensions.space15),
-                  Image.asset(
+                  /*Image.asset(
                     MyImages.appLogoWhite,
                     width: MediaQuery.of(context).size.width / 3,
-                  ),
+                  ),*/
                   SvgPicture.asset(MyIcons.bg),
                   Container(
                     padding: const EdgeInsetsDirectional.only(

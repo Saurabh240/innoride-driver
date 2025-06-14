@@ -120,8 +120,10 @@ class _OfferBidBottomSheetState extends State<OfferBidBottomSheet> {
                 ),
                 spaceDown(Dimensions.space40),
                 RoundedButton(
-                  text: MyStrings.bidNOW.tr.toUpperCase(),
+                  //text: MyStrings.bidNOW.tr.toUpperCase(),
+                  text: MyStrings.accept.tr.toUpperCase(),
                   isLoading: controller.isSendLoading,
+                  color: MyColor.greenSuccessColor,
                   textStyle: boldDefault.copyWith(
                       color: MyColor.colorWhite,
                       fontSize: Dimensions.fontLarge),

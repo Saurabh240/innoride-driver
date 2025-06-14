@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 import '../../../core/utils/method.dart';
 import '../../../core/utils/url_container.dart';
 import '../../model/global/response_model/response_model.dart';
@@ -26,6 +28,7 @@ class SocialLoginRepo {
       map = {'token': accessToken, 'provider': "apple"};
     }
 
+    debugPrint("social Login User body ==> $map");
     String url = '${UrlContainer.baseUrl}${UrlContainer.socialLoginEndPoint}';
     ResponseModel model =
         await apiClient.request(url, Method.postMethod, map, passHeader: false);
