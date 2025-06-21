@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "159266541498-peler4blu4gj61l44dng99jqc1almutf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.innodrivers",
+            "certificate_hash": "475ddc67a16cfc47d4ebd541a7359ce875d54fe7"
+          }
+        },
+        {
           "client_id": "159266541498-qkre00ukmpd8k3njhjpmfdj61aj3r8di.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
@@ -57,6 +65,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "159266541498-8gk92dn6dr3d05o5i6hkfu0behatp4k7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.innorider",
+            "certificate_hash": "c0de5394a4715969a44a059dca92057e3179864a"
+          }
+        },
         {
           "client_id": "159266541498-fva4f2vfjdsss9u182ll0jcjqg1v9cvq.apps.googleusercontent.com",
           "client_type": 1,

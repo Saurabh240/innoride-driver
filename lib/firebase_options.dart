@@ -63,7 +63,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '159266541498',
     projectId: 'innoride-85b4b',
     storageBucket: 'innoride-85b4b.firebasestorage.app',
-    androidClientId: '159266541498-fva4f2vfjdsss9u182ll0jcjqg1v9cvq.apps.googleusercontent.com',
+    androidClientId: '159266541498-8gk92dn6dr3d05o5i6hkfu0behatp4k7.apps.googleusercontent.com',
     iosClientId: '159266541498-krisjt5cmtglcll0m42987qveoinklgl.apps.googleusercontent.com',
     iosBundleId: 'com.innodrivers',
   );
